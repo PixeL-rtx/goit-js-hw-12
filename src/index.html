@@ -8,16 +8,25 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
     <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+      <div class="container">
+        <form class="form" form-js>
+          <input
+            class="input-form"
+            type="text"
+            name="input"
+            placeholder="Search images..."
+          />
+          <button type="submit" class="submit-btn">Search</button>
+        </form>
+        <ul class="gallary"></ul>
+        <span class="loader"></span>
+        <ul class="gallery"></ul>
+
+        <button type="button" class="load_Btn is-hidden">Load more</button>
+      </div>
     </main>
-
-    <load src="./partials/footer.html" />
-
     <script type="module" src="./main.js"></script>
+    <script type="module" src="./js/pixabay-api.js"></script>
   </body>
 </html>
