@@ -66,6 +66,11 @@ async function feedbackForm(event) {
     }
   } catch (error) {
     console.log(error);
+    iziToast.error({
+      title: 'Error',
+      message: 'Something went wrong. Please try again later.',
+      position: 'topRight',
+    });
   } finally {
     loader.style.display = 'none';
   }
